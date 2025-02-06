@@ -1345,6 +1345,101 @@ input:checked + .slider:before {
 
 .dify {
     background-color: #F4F3FF;
+    padding: 6rem 0;
+}
+
+.dify .about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
+    margin-top: 3rem;
+}
+
+.dify .about-text {
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.dify .about-text h3 {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-primary);
+}
+
+.dify .features-list {
+    margin-top: 3rem;
+}
+
+.dify .features-list h3 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: var(--text-primary);
+}
+
+.dify-features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.dify-feature-card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 1rem;
+    box-shadow: var(--card-shadow);
+    border: 1px solid var(--card-border);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dify-feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(30, 41, 59, 0.12);
+}
+
+.dify-feature-card .feature-icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 1.5rem;
+}
+
+.dify-feature-card h4 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.dify-feature-card p {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.official-link {
+    margin-top: 2rem;
+}
+
+.link-arrow {
+    display: inline-flex;
+    align-items: center;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.link-arrow:hover {
+    color: var(--secondary-color);
+}
+
+.link-arrow::after {
+    content: '→';
+    margin-left: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.link-arrow:hover::after {
+    transform: translateX(4px);
 }
 
 .dify .use-case-card p {

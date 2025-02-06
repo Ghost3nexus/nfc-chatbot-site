@@ -222,6 +222,9 @@ body {
     padding: 8rem 2rem 4rem;
     background: linear-gradient(135deg, #f8fafc 0%, #eff6ff 100%);
     overflow: hidden;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
 }
 
 .hero-content {
@@ -250,9 +253,6 @@ body {
     transform: translateZ(20px) rotate3d(1, 1, 0, 2deg);
     filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.15));
 }
-    min-height: 90vh;
-    display: flex;
-    align-items: center;
     position: relative;
 }
 

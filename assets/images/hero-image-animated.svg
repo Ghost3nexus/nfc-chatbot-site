@@ -1,0 +1,53 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-5px); }
+    }
+    .text { 
+      font-family: 'Arial', sans-serif;
+      font-weight: bold;
+      fill: #4F46E5;
+    }
+    .touch-me { 
+      font-size: 32px;
+      animation: blink 2s infinite;
+    }
+    .chat-me { 
+      font-size: 28px;
+      animation: blink 2s infinite 1s;
+    }
+    .card {
+      animation: float 3s ease-in-out infinite;
+    }
+    .details {
+      font-size: 16px;
+      fill: #4F46E5;
+    }
+  </style>
+
+  <!-- Smartphone -->
+  <rect x="220" y="50" width="160" height="200" rx="20" fill="#F4F3FF" stroke="#4F46E5" stroke-width="2"/>
+  <rect x="240" y="80" width="120" height="20" rx="5" fill="#E4E3FF"/>
+  <rect x="240" y="110" width="120" height="20" rx="5" fill="#E4E3FF"/>
+  <rect x="240" y="140" width="120" height="20" rx="5" fill="#E4E3FF"/>
+  <text x="255" y="200" class="text chat-me">CHAT ME</text>
+  <text x="270" y="230" class="text details">詳しく見る</text>
+
+  <!-- NFC Card -->
+  <g class="card" transform="translate(20,100) rotate(-15)">
+    <rect x="0" y="0" width="200" height="110" rx="10" fill="white" stroke="#4F46E5" stroke-width="2"/>
+    <circle cx="25" cy="25" r="10" fill="#4F46E5" opacity="0.3"/>
+    <circle cx="25" cy="25" r="5" fill="#4F46E5"/>
+    <text x="40" y="65" class="text touch-me">TOUCH ME</text>
+  </g>
+
+  <!-- Connection Lines -->
+  <path d="M180,120 C200,120 220,140 240,120" stroke="#4F46E5" stroke-width="2" fill="none" stroke-dasharray="4">
+    <animate attributeName="stroke-dashoffset" from="8" to="0" dur="1s" repeatCount="indefinite"/>
+  </path>
+</svg>

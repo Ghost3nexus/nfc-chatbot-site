@@ -1,0 +1,7 @@
+<svg width="200" height="50" viewBox="0 0 200 50" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .text { font-family: 'Hiragino Sans', 'Noto Sans JP', sans-serif; font-weight: bold; fill: #4F46E5; }
+    .brand { font-size: 28px; }
+  </style>
+  <text x="10" y="35" class="text brand">チャットミー</text>
+</svg>
